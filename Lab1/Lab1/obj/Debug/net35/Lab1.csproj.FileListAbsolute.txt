@@ -1,0 +1,16 @@
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\bin\Debug\net35\NUnit3.TestAdapter.dll
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\bin\Debug\net35\NUnit3.TestAdapter.pdb
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\bin\Debug\net35\nunit.engine.dll
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\bin\Debug\net35\nunit.engine.api.dll
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\bin\Debug\net35\Lab1.dll
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\bin\Debug\net35\Lab1.pdb
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\bin\Debug\net35\nunit.framework.dll
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\bin\Debug\net35\WebDriver.Support.dll
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\bin\Debug\net35\WebDriver.dll
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\obj\Debug\net35\Lab1.csprojAssemblyReference.cache
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\obj\Debug\net35\Lab1.AssemblyInfoInputs.cache
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\obj\Debug\net35\Lab1.AssemblyInfo.cs
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\obj\Debug\net35\Lab1.csproj.CoreCompileInputs.cache
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\obj\Debug\net35\Lab1.csproj.CopyComplete
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\obj\Debug\net35\Lab1.dll
+C:\Users\Михаил\rep\Lab_EPAM_Selenium\Lab1\Lab1\obj\Debug\net35\Lab1.pdb
