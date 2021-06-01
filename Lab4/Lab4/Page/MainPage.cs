@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Support.PageObjects;
+using SeleniumExtras.PageObjects;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,7 +13,7 @@ namespace Lab2
     {
         public MainPage(IWebDriver driver)
         {
-            this.driver = driver;
+            AbstrPage.driver = driver;
             PageFactory.InitElements(driver, this);
         }
 

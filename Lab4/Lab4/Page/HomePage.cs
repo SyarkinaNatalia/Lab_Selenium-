@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
+using OpenQA.Selenium.Interactions;
+using SeleniumExtras.PageObjects;
 
 
 namespace Lab2
@@ -9,16 +10,16 @@ namespace Lab2
     {
         public HomePage(IWebDriver driver)
         {
-            this.driver = driver;
+            AbstrPage.driver = driver;
             PageFactory.InitElements(driver, this);
         }
 
-        [FindsBy(How = How.XPath, Using = "(//a[contains(@href, '/Product')])[2]")]
-        private IWebElement allp;
+        [FindsBy(How = How.XPath, Using = "//div/a[@href='/Product']")]
+        public IWebElement allp;
         [FindsBy(How = How.XPath, Using = "//label")]
-        private IWebElement name;
+        public IWebElement name;
         [FindsBy(How = How.XPath, Using = "//div[2]/div/label")]
-        private IWebElement pas;
+        public IWebElement pas;
 
 
 

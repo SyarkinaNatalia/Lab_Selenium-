@@ -1,4 +1,4 @@
-﻿using OpenQA.Selenium.Support.PageObjects;
+﻿using SeleniumExtras.PageObjects;
 using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
@@ -16,31 +16,30 @@ namespace Lab2
     {
         public CreateNew(IWebDriver driver)
         {
-            this.driver = driver;
+            AbstrPage.driver = driver;
             PageFactory.InitElements(driver, this);
-
         }
 
         [FindsBy(How = How.Id, Using = "ProductName")]
-        private IWebElement productName;
+        public IWebElement productName;
         [FindsBy(How = How.Id, Using = "CategoryId")]
-        private IWebElement category;
+        public IWebElement category;
         [FindsBy(How = How.Id, Using = "SupplierId")]
-        private IWebElement supplier;
+        public IWebElement supplier;
         [FindsBy(How = How.Id, Using = "UnitPrice")]
-        private IWebElement unitPrice;
+        public IWebElement unitPrice;
         [FindsBy(How = How.Id, Using = "QuantityPerUnit")]
-        private IWebElement quantityPerUnit;
+        public IWebElement quantityPerUnit;
         [FindsBy(How = How.Id, Using = "UnitsInStock")]
-        private IWebElement unitsInStock;
+        public IWebElement unitsInStock;
         [FindsBy(How = How.Id, Using = "UnitsOnOrder")]
-        private IWebElement unitsOnOrder;
+        public IWebElement unitsOnOrder;
         [FindsBy(How = How.Id, Using = "ReorderLevel")]
-        private IWebElement reorderLevel;
+        public IWebElement reorderLevel;
         [FindsBy(How = How.XPath, Using = "//input[@type='submit']")]
-        private IWebElement btn;
+        public IWebElement btn;
         [FindsBy(How = How.XPath, Using = "//a[contains(text(),'Create new')]")]
-        private IWebElement btncreate;
+        public IWebElement btncreate;
 
 
 
@@ -48,6 +47,12 @@ namespace Lab2
         {
             Servprd.CreateNew(productName, category, supplier, unitPrice, quantityPerUnit, unitsInStock, unitsOnOrder, reorderLevel);
             btn.Click();
+            return new AllProducts(driver);
+        }
+
+        public AllProducts enterbtn()
+        {
+            btncreate.Click();
             return new AllProducts(driver);
         }
 

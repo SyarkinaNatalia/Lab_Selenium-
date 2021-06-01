@@ -8,6 +8,6 @@ namespace Lab2
 {
     abstract class AbstrPage
     {
-        protected IWebDriver driver;
+        public static IWebDriver driver;
     }
 }

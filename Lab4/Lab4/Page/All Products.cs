@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Support.PageObjects;
+using SeleniumExtras.PageObjects;
 using System;
 
 
@@ -14,19 +14,20 @@ namespace Lab2
     {
         public AllProducts(IWebDriver driver)
         {
-            this.driver = driver;
+            AbstrPage.driver = driver;
             PageFactory.InitElements(driver, this);
         }
+
         [FindsBy(How = How.XPath, Using = "//a[contains(text(),'Create new')]")]
-        private IWebElement creatnw;
+        public IWebElement creatnw;
         [FindsBy(How = How.XPath, Using = "//a[contains(text(),'Beef  steak')]")]
-        private IWebElement prod;
+        public IWebElement prod;
         [FindsBy(How = How.XPath, Using = "(//a[contains(text(),'Remove')])[78]")]
-        private IWebElement delete;
+        public IWebElement delete;
         [FindsBy(How = How.XPath, Using = "//a[contains(text(),'Logout')]")]
-        private IWebElement logout;
+        public IWebElement logout;
         [FindsBy(How = How.XPath, Using = "(//a[contains(@href, '/Product')])[1]")]
-        private IWebElement allp;
+        public IWebElement allp;
 
 
         public CreateNew clicklinkcr()
@@ -47,7 +48,7 @@ namespace Lab2
 
         public MainPage lout()
         {
-            logout.Click();
+           logout.Click();
             return new MainPage(driver);
         }
         public AllProducts clicklinkallpr()
